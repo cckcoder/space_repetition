@@ -1,17 +1,17 @@
 version: '3'
 
 services:
-  postgres:
+  sr_postgres:
     image: postgres:latest
-    container_name: postgres
+    container_name: sr_postgres
     ports:
        - "5432:5432"
     volumes:
-      - postgres:/var/lib/postgresql/data
+      - sr_postgres:/var/lib/postgresql/data
     environment:
-      POSTGRES_USER: root
+      POSTGRES_USER: sr_admin
       POSTGRES_PASSWORD: dev2original
-      POSTGRES_DB: tutorial_pg
+      POSTGRES_DB: space_repetition
 
   pgadmin:
       container_name: pgadmin
@@ -25,5 +25,5 @@ services:
         - "${PGADMIN_PORT:-5050}:80"
 
 volumes:
-  postgres:
+  sr_postgres:
   pgadmin:
