@@ -22,4 +22,9 @@
 1. create directory apps/users
 1. `python manage.py startapp users apps/users`
 1. then add `AUTH_USER_MODEL = 'users.User'` in space_repetting/setting.py
+
+### User
+
+1. email: codewizz@codewizz.com
+1. pass: eve555%%
    `
