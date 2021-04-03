@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'apps.users',
 ]
 
 MIDDLEWARE = [
@@ -78,9 +79,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'space_repetition',
         'USER': 'sr_admin',
-        'PASSWORD': '',
+        'PASSWORD': 'dev2original',
         'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'PORT': '5434', #For docker
     }
 }
 
